@@ -7,14 +7,17 @@
   <body>
 <video src="videoplayback.mp4" autoplay controls id="video">
 </video>
-<button type="button" name="button" onclick="autoplay()">play</button>
+<center>
+<button type="button" name="button" onclick="play()">play</button>
 <button type="button" name="button" onclick="pause()">pause</button>
+</center>
 <br>
 <br>
 <audio src="audio.mp3" autoplay controls id="audio">
 </audio>
-<button type="button" name="button" onclick="autoplay()">play</button>
-<button type="button" name="button" onclick="pause()">pause</button>
+<center>
+<button type="button" name="button" onclick="play1()">play</button>
+<button type="button" name="button" onclick="pause1()">pause</button>
   </body>
 </html>
 
@@ -29,13 +32,12 @@
     vid.pause();
 
   }
-  <script type="text/javascript">
-    function play(){
+    function play1(){
       var aud=document.getElementById('audio');
       aud.play();
 
     }
-    function pause(){
+    function pause1(){
       var aud=document.getElementById('audio');
       aud.pause();
 
